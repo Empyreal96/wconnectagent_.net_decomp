@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Portable.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE30F9B0-0D4A-4CFD-855F-400616BAF9C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Debugging.AdbAgent.Portable</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Protocol.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Protocol.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.ApkConverter.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.ApkConverter.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.ApkDecoder.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.ApkDecoder.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.XDocument" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChannelJob.cs" />
+    <Compile Include="ShellChannelJob.cs" />
+    <Compile Include="ActivityStartJob.cs" />
+    <Compile Include="AdbMessageStrings.cs" />
+    <Compile Include="AdbRegularExpressions.cs" />
+    <Compile Include="AndroidPackageResolverService.cs" />
+    <Compile Include="ApkDetails.cs" />
+    <Compile Include="ApkInstallJob.cs" />
+    <Compile Include="ApkUninstallHandler.cs" />
+    <Compile Include="ApkUninstallJob.cs" />
+    <Compile Include="AppxFileSystemCleanUpService.cs" />
+    <Compile Include="AppxDeployService.cs" />
+    <Compile Include="AppxLaunchDeployUtil.cs" />
+    <Compile Include="AppxPackage.cs" />
+    <Compile Include="ChannelJobConfiguration.cs" />
+    <Compile Include="ChannelJobDispatcher.cs" />
+    <Compile Include="ExceptionUtils.cs" />
+    <Compile Include="FileSyncSnifferHandler.cs" />
+    <Compile Include="IAgentConfiguration.cs" />
+    <Compile Include="AndroidDebugBridgeAgent.cs" />
+    <Compile Include="ApkInstallHandler.cs" />
+    <Compile Include="AdbTrafficDirection.cs" />
+    <Compile Include="IAdbTrafficMonitor.cs" />
+    <Compile Include="IAowInstanceWrapper.cs" />
+    <Compile Include="InteractiveShellChannels.cs" />
+    <Compile Include="InteractiveShellTrackerHandler.cs" />
+    <Compile Include="IOUtils.cs" />
+    <Compile Include="IShellManager.cs" />
+    <Compile Include="Intent.cs" />
+    <Compile Include="AppUninstallResult.cs" />
+    <Compile Include="IPackageManager.cs" />
+    <Compile Include="IFactory.cs" />
+    <Compile Include="InternetEndPoint.cs" />
+    <Compile Include="IUriLauncher.cs" />
+    <Compile Include="MobilePortableApkDecoder.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="PackageDeploymentResult.cs" />
+    <Compile Include="PackageInformation.cs" />
+    <Compile Include="AndroidPackageUninstallResult.cs" />
+    <Compile Include="AndroidPackageUninstallService.cs" />
+    <Compile Include="PathSanitizer.cs" />
+    <Compile Include="RepositoryHandler.cs" />
+    <Compile Include="ShellActivityStartHandler.cs" />
+    <Compile Include="ShellParamBase.cs" />
+    <Compile Include="ShellPmInstallParam.cs" />
+    <Compile Include="ShellAmStartParam.cs" />
+    <Compile Include="ShellPmUninstallParam.cs" />
+    <Compile Include="ShellRmParams.cs" />
+    <Compile Include="StringParsingUtils.cs" />
+    <Compile Include="FileSyncSnifferSink.cs" />
+    <Compile Include="Exceptions\AdbdStartFailureException.cs" />
+    <Compile Include="Exceptions\AndroidPackageResolveException.cs" />
+    <Compile Include="Exceptions\ProjectAStartFailureException.cs" />
+    <Compile Include="Exceptions\LauncherUriException.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="apktestapp.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

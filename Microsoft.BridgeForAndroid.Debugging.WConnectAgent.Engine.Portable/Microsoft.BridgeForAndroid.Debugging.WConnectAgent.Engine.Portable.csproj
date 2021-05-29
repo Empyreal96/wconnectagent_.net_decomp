@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21C1A637-D104-440B-8A1D-A8ADB7CBF9AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Debugging.AdbEngine.Portable</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Protocol.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Protocol.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IAdbChannel.cs" />
+    <Compile Include="AdbChannel.cs" />
+    <Compile Include="IAdbPacketHandler.cs" />
+    <Compile Include="IAdbChannelClientManager.cs" />
+    <Compile Include="AdbChannelClientManager.cs" />
+    <Compile Include="AdbEngineException.cs" />
+    <Compile Include="AdbEngineSocketException.cs" />
+    <Compile Include="AdbEngineSocketAcceptException.cs" />
+    <Compile Include="AdbEngineSocketConnectException.cs" />
+    <Compile Include="AdbEngineSocketSendReceiveException.cs" />
+    <Compile Include="AdbEngineTooManyChannelsException.cs" />
+    <Compile Include="AdbPacketReceivedEventArgs.cs" />
+    <Compile Include="IWork.cs" />
+    <Compile Include="AdbPacketReceivWork.cs" />
+    <Compile Include="AdbPacketSendWork.cs" />
+    <Compile Include="AdbStreamWriter.cs" />
+    <Compile Include="ISocket.cs" />
+    <Compile Include="ISocketAcceptWork.cs" />
+    <Compile Include="ISocketConnectWork.cs" />
+    <Compile Include="ISocketReceiveWork.cs" />
+    <Compile Include="ISocketSendWork.cs" />
+    <Compile Include="MemoryPipe.cs" />
+    <Compile Include="SocketAcceptedEventArgs.cs" />
+    <Compile Include="SocketConnectedEventArgs.cs" />
+    <Compile Include="SocketDataReceivedEventArgs.cs" />
+    <Compile Include="AdbStreamReader.cs" />
+    <Compile Include="WorkScheduler.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

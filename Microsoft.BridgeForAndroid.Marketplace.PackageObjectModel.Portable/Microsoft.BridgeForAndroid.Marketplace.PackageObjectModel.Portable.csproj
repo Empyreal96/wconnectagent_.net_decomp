@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{87A791E1-58E1-457F-B7E5-4B2F55B4696F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Marketplace.PackageObjectModel</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="PackageTableObjectModel.Portable">
+      <HintPath>lib\PackageTableObjectModel.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Reflection" />
+    <Reference Include="System.Reflection.Extensions" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.Serialization.Primitives" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Xml.XDocument" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppxImageType.cs" />
+    <Compile Include="AppxPackageType.cs" />
+    <Compile Include="AppxPackageArchitecture.cs" />
+    <Compile Include="AppxPackageConfiguration.cs" />
+    <Compile Include="IPackageDetails.cs" />
+    <Compile Include="ImageConfig.cs" />
+    <Compile Include="ImageConfigGenerator.cs" />
+    <Compile Include="IPackageInformation.cs" />
+    <Compile Include="IPortableRepositoryHandler.cs" />
+    <Compile Include="Portable\AggregateFeature.cs" />
+    <Compile Include="Portable\SectionH1AnnotationAttribute.cs" />
+    <Compile Include="Portable\SectionH2AnnotationAttribute.cs" />
+    <Compile Include="Portable\IDeveloperReport.cs" />
+    <Compile Include="Portable\DeveloperReportBase.cs" />
+    <Compile Include="Portable\IFeatureLog.cs" />
+    <Compile Include="Portable\IFeatureDetails.cs" />
+    <Compile Include="Portable\ApkFormatException.cs" />
+    <Compile Include="Portable\IReportBuilder.cs" />
+    <Compile Include="Portable\LogAnnotationAttribute.cs" />
+    <Compile Include="Portable\ReportBuilderInfoAttribute.cs" />
+    <Compile Include="Portable\ReportSectionH1.cs" />
+    <Compile Include="Portable\WorkerLogProvider.cs" />
+    <Compile Include="Portable\ReportSectionH2.cs" />
+    <Compile Include="Portable\WorkerLogLevel.cs" />
+    <Compile Include="Portable\WorkerLogKey.cs" />
+    <Compile Include="Portable\WorkLogMap.cs" />
+    <Compile Include="Portable\DecoderValueMustBeStringException.cs" />
+    <Compile Include="Portable\FeatureAnnotationAttribute.cs" />
+    <Compile Include="Portable\DecoderManifestNoApplicationException.cs" />
+    <Compile Include="Portable\DecoderManifestNoVersionCodeException.cs" />
+    <Compile Include="Portable\PackageObjectModelException.cs" />
+    <Compile Include="Portable\Apk\ManifestObjectModelExtensions.cs" />
+    <Compile Include="Portable\Apk\ApkPackageConst.cs" />
+    <Compile Include="Portable\Apk\GameServicesConfig.cs" />
+    <Compile Include="Portable\Apk\AnalyticsConfig.cs" />
+    <Compile Include="Portable\Apk\ApkConfigFile.cs" />
+    <Compile Include="Portable\Apk\ManifestConst.cs" />
+    <Compile Include="Portable\Apk\ApkResource.cs" />
+    <Compile Include="Portable\Apk\ScreenDensity.cs" />
+    <Compile Include="Portable\Apk\ApkResourceConfig.cs" />
+    <Compile Include="Portable\Apk\ApkResourceType.cs" />
+    <Compile Include="Portable\Apk\ApkResourceValue.cs" />
+    <Compile Include="Portable\Apk\ManifestString.cs" />
+    <Compile Include="Portable\Apk\ManifestStringResource.cs" />
+    <Compile Include="Portable\Appx\AppxUtilities.cs" />
+    <Compile Include="Portable\Appx\FileTypeAssociation.cs" />
+    <Compile Include="Portable\Appx\ApkScreenOrientationType.cs" />
+    <Compile Include="Portable\Appx\AppxScreenOrientationType.cs" />
+    <Compile Include="Portable\Appx\AppxScreenOrientationCategory.cs" />
+    <Compile Include="Portable\Appx\ScreenOrientationMap.cs" />
+    <Compile Include="Portable\Appx\ScreenOrientationItem.cs" />
+    <Compile Include="Apk\IDevReportIntentReceiver.cs" />
+    <Compile Include="Apk\IDevReportManifestService.cs" />
+    <Compile Include="Apk\ManifestServiceElement.cs" />
+    <Compile Include="Apk\ManifestUtilities.cs" />
+    <Compile Include="Apk\ApkObjectModel.cs" />
+    <Compile Include="Apk\ApkResourceHelper.cs" />
+    <Compile Include="Apk\IDevReportMetadataContainer.cs" />
+    <Compile Include="Apk\IDevReportActivity.cs" />
+    <Compile Include="Apk\ManifestActivity.cs" />
+    <Compile Include="Apk\IDevReportActivityAlias.cs" />
+    <Compile Include="Apk\ManifestActivityAlias.cs" />
+    <Compile Include="Apk\IDevReportManifestApplication.cs" />
+    <Compile Include="Apk\ManifestApplication.cs" />
+    <Compile Include="Apk\ManifestApplicationMetadata.cs" />
+    <Compile Include="Apk\ManifestContentProvider.cs" />
+    <Compile Include="Apk\WindowsOSVersion.cs" />
+    <Compile Include="Apk\IDevReportManifestObjectModel.cs" />
+    <Compile Include="Apk\ManifestInfo.cs" />
+    <Compile Include="Apk\IDevReportIntentFilter.cs" />
+    <Compile Include="Apk\ManifestIntentFilter.cs" />
+    <Compile Include="Apk\IDevReportIntentFilterData.cs" />
+    <Compile Include="Apk\ManifestIntentFilterData.cs" />
+    <Compile Include="Apk\IDevReportReceiver.cs" />
+    <Compile Include="Apk\ManifestReceiver.cs" />
+    <Compile Include="Apk\ManifestUsesSdk.cs" />
+    <Compile Include="Apk\ManifestUsesFeature.cs" />
+    <Compile Include="Apk\ManifestUsesPermission.cs" />
+    <Compile Include="Apk\IDevReportObjectModel.cs" />
+    <Compile Include="Apk\IDevReportDexModel.cs" />
+    <Compile Include="Apk\DevReportMetadata.cs" />
+    <Compile Include="Apk\DevReportDexMethodInvocation.cs" />
+    <Compile Include="Apk\IDevReportMiddlewareModel.cs" />
+    <Compile Include="Apk\MiddlewareInfo.cs" />
+    <Compile Include="Apk\Middleware.cs" />
+    <Compile Include="Apk\IDevReportServicesModel.cs" />
+    <Compile Include="Apk\EnumDescriptionAttribute.cs" />
+    <Compile Include="Apk\ServiceName.cs" />
+    <Compile Include="Apk\ClassMemberStatus.cs" />
+    <Compile Include="Apk\CalledTrackedServiceMethodDetails.cs" />
+    <Compile Include="Apk\IDevApkPackageModel.cs" />
+    <Compile Include="Permission\CapabilityType.cs" />
+    <Compile Include="Permission\AppxCapability.cs" />
+    <Compile Include="Permission\PermissionMap.cs" />
+    <Compile Include="Permission\PermissionType.cs" />
+    <Compile Include="Permission\PermissionMapItem.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

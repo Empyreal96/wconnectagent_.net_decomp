@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\Microsoft.BridgeForAndroid.Marketplace.Utils.Portable.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6FCAA80D-300A-4C93-8900-1AE39922F02A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.BridgeForAndroid.Marketplace.Utils.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Marketplace.Utils</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib.Portable">
+      <HintPath>lib\ICSharpCode.SharpZipLib.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Runtime.InteropServices" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Threading.Tasks.Dataflow" />
+    <Reference Include="System.Threading.Tasks.Parallel" />
+    <Reference Include="System.Xml.ReaderWriter" />
+    <Reference Include="System.Xml.XDocument" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Portable\CryptoHelper.cs" />
+    <Compile Include="Portable\PortableZipReader.cs" />
+    <Compile Include="Portable\PortableZipUtils.cs" />
+    <Compile Include="Portable\PortableUtilsServiceLocator.cs" />
+    <Compile Include="Portable\UtilsException.cs" />
+    <Compile Include="Portable\WindowsRuntimeSystemExtensions.cs" />
+    <Compile Include="Portable\InputType.cs" />
+    <Compile Include="Portable\XmlDocWriter.cs" />
+    <Compile Include="Portable\XmlUtilites.cs" />
+    <Compile Include="Portable\FileSystem\ResourceHelper.cs" />
+    <Compile Include="Portable\FileSystem\SimpleResXWriter.cs" />
+    <Compile Include="Portable\SystemEX\ProcessRunnerBase.cs" />
+    <Compile Include="Portable\SystemEX\PortableProcessRunner.cs" />
+    <Compile Include="Portable\SystemEX\PortableProcessRunnerFactory.cs" />
+    <Compile Include="Portable\SystemEX\Win32InteropException.cs" />
+    <Compile Include="Portable\SystemEX\Win32NativeMethods.cs" />
+    <Compile Include="Log\IMessageArg.cs" />
+    <Compile Include="Log\ExpMessageArg.cs" />
+    <Compile Include="Log\ILogMessage.cs" />
+    <Compile Include="Log\ILogMessageFormatter.cs" />
+    <Compile Include="Log\ILogProvider.cs" />
+    <Compile Include="Log\LoggerCore.cs" />
+    <Compile Include="Log\LogProvider.cs" />
+    <Compile Include="Parsers\LanguageQualifier.cs" />
+    <Compile Include="Xml\XmlConstants.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\Microsoft.BridgeForAndroid.Marketplace.ApkDecoder.Portable.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CA320A1-39D2-4185-A59D-4B1FFCC4B158}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Microsoft.BridgeForAndroid.Marketplace.ApkDecoder.Portable</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Marketplace.Decoder.Portable</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.Concurrent" />
+    <Reference Include="System.Diagnostics.Debug" />
+    <Reference Include="System.Diagnostics.Tools" />
+    <Reference Include="System.Globalization" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Linq" />
+    <Reference Include="System.Resources.ResourceManager" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Text.Encoding" />
+    <Reference Include="System.Threading" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Threading.Tasks.Parallel" />
+    <Reference Include="System.Xml.ReaderWriter" />
+    <Reference Include="System.Xml.XDocument" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApkDecoderCommonException.cs" />
+    <Compile Include="ApkDecoderConfigException.cs" />
+    <Compile Include="ApkDecoderManifestException.cs" />
+    <Compile Include="ApkDecoderResourcesException.cs" />
+    <Compile Include="PortableApkDecoder.cs" />
+    <Compile Include="Common\Chunk.cs" />
+    <Compile Include="Common\ChunkDecoder.cs" />
+    <Compile Include="Common\ChunkType.cs" />
+    <Compile Include="Common\StreamDecoder.cs" />
+    <Compile Include="Common\StringPoolOptions.cs" />
+    <Compile Include="Common\StringPoolChunk.cs" />
+    <Compile Include="Manifest\Decoder\XmlDecoder.cs" />
+    <Compile Include="Manifest\Decoder\XmlChunkDecoder.cs" />
+    <Compile Include="Manifest\Decoder\XmlDataDecoder.cs" />
+    <Compile Include="Manifest\Decoder\XmlEndElementChunkDecoder.cs" />
+    <Compile Include="Manifest\Decoder\XmlNamespaceMapItem.cs" />
+    <Compile Include="Manifest\Decoder\XmlStartElementChunkDecoder.cs" />
+    <Compile Include="Manifest\Types\XmlAttribute.cs" />
+    <Compile Include="Manifest\Types\XmlItemChunk.cs" />
+    <Compile Include="Manifest\Types\XmlCDataChunk.cs" />
+    <Compile Include="Manifest\Types\XmlChunk.cs" />
+    <Compile Include="Manifest\Types\XmlElementChunk.cs" />
+    <Compile Include="Manifest\Types\XmlEndElementChunk.cs" />
+    <Compile Include="Manifest\Types\XmlNamespaceChunk.cs" />
+    <Compile Include="Manifest\Types\XmlResourceMapChunk.cs" />
+    <Compile Include="Manifest\Types\XmlStartElementChunk.cs" />
+    <Compile Include="Manifest\XmlAttributeValues\XmlResourceIdMap.cs" />
+    <Compile Include="Resources\Decoder\ResourcesDecoder.cs" />
+    <Compile Include="Resources\Decoder\ResourcesHelper.cs" />
+    <Compile Include="Resources\Types\PackageChunk.cs" />
+    <Compile Include="Resources\Types\ResourceConfig.cs" />
+    <Compile Include="Resources\Types\ResourceItem.cs" />
+    <Compile Include="Resources\Types\ResTableEntryFlags.cs" />
+    <Compile Include="Resources\Types\ResourceKey.cs" />
+    <Compile Include="Resources\Types\ResourceValue.cs" />
+    <Compile Include="Resources\Types\ResourceValueTypes.cs" />
+    <Compile Include="Resources\Types\TableChunk.cs" />
+    <Compile Include="Resources\Types\TypeChunk.cs" />
+    <Compile Include="Resources\Types\TypeRecord.cs" />
+    <Compile Include="Resources\Types\TypeSpecChunkConfigs.cs" />
+    <Compile Include="Resources\Types\TypeSpecChunk.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

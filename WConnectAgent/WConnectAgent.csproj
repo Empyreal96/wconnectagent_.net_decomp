@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\Agent\WConnectAgent.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5A9C8678-89B9-44FB-94F9-C17775B0A054}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>WConnectAgent</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.SharedUtils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Engine.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Mobile">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Sockets.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Debugging.WConnectAgent.Sockets.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.PackageObjectModel.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Interfaces.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Portable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Portable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.BridgeForAndroid.Marketplace.Utils.Shareable">
+      <HintPath>lib\Microsoft.BridgeForAndroid.Marketplace.Utils.Shareable.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Diagnostics.Tracing.EventSource">
+      <HintPath>lib\Microsoft.Diagnostics.Tracing.EventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBridgeForAndroidPlatform">
+      <HintPath>lib\WindowsBridgeForAndroidPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diagnostics\Telemetry\TelemetryEventSource.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgent\Mobile\AowInstanceWrapper.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgent\Mobile\IInteropServiceProvider.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\AgentConfiguration.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\EtwEventStreamProvider.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\EtwLogProvider.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\Factory.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\Program.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\SimpleLogMessage.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\SimpleLogMessageFormatter.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\Win32NativeMethods.cs" />
+    <Compile Include="Arcadia\Debugging\AdbAgentExe\Mobile\NativeMethods.cs" />
+    <Compile Include="Arcadia\Marketplace\Utils\Log\ConsoleLog.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

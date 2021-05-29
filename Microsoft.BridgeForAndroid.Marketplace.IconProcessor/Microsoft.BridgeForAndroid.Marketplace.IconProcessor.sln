@@ -1,0 +1,20 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.BridgeForAndroid.Marketplace.IconProcessor", "Microsoft.BridgeForAndroid.Marketplace.IconProcessor.csproj", "{AE11995A-157F-416D-AED2-CC21EC36F40F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE11995A-157F-416D-AED2-CC21EC36F40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE11995A-157F-416D-AED2-CC21EC36F40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE11995A-157F-416D-AED2-CC21EC36F40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE11995A-157F-416D-AED2-CC21EC36F40F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
