@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\Empyreal96\Documents\repos\AowDebugger\WConnectAgentLauncher.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65E2AA59-D6E5-4C36-BF2E-7C76D25F0D0D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>WConnectAgentLauncher</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <ApplicationVersion>0.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>Microsoft.Arcadia.Debugging.AdbAgentExe.Launcher</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.IO.Compression" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgentInstances.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="PathProvider.cs" />
+    <Compile Include="ProcessHelper.cs" />
+    <Compile Include="ProcessInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Win32InteropException.cs" />
+    <Compile Include="Win32NativeMethods.cs" />
+    <Compile Include="ZipFileExtensions.cs" />
+    <Compile Include="LauncherConfiguration.cs" />
+    <Compile Include="Commands\LauncherCommand.cs" />
+    <Compile Include="Commands\CommandClear.cs" />
+    <Compile Include="Commands\CommandExceptionReason.cs" />
+    <Compile Include="Commands\CommandException.cs" />
+    <Compile Include="Commands\CommandHelp.cs" />
+    <Compile Include="Commands\CommandInstances.cs" />
+    <Compile Include="Commands\CommandKillAll.cs" />
+    <Compile Include="Commands\CommandRun.cs" />
+    <Compile Include="Commands\CommandRunIfNecessary.cs" />
+    <Compile Include="Commands\CommandUnknown.cs" />
+    <Compile Include="Commands\CommandUnpack.cs" />
+    <Compile Include="Commands\LauncherExitCodes.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
